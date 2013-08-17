@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to your account"
+        android:textSize="20dp"
+        android:layout_gravity="center" 
+        android:layout_weight="30"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="230dp"
+        android:layout_height="1dp"
+         android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+         android:layout_weight="20"
+         android:hint="Username"
+         android:gravity="center"
+        
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="230dp"
+        android:layout_height="0dp"
+         android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPassword" 
+         android:layout_weight="20"
+              android:hint="Password"
+               android:gravity="center"
+               android:layout_marginTop="10dp"/>
+    
+ 
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me" 
+        android:layout_weight="10"
+        android:layout_gravity="center"
+         />
+    
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="Login"
+         android:layout_weight="10"
+         android:layout_gravity="center" />
+
+</LinearLayout>
